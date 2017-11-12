@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 */
 
+/* Respect PRE: no wrap */
 .file_container.snippet_container.snippet_wrap .CodeMirror .CodeMirror-code > div pre,
 .file_container.snippet_container.snippet_wrap .sssh-code .sssh-line pre,
 .message .file_container.snippet_container .CodeMirror .CodeMirror-code > div pre,
@@ -34,18 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
   white-space: pre;
 }
 
+/* Respect PRE: no wrap */
 pre.special_formatting {
   white-space: pre;
   overflow-x: scroll;
 }
 
-/* Hubot messages */
+/* Bot messages: fixed font */
 ts-message.bot_message .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
   line-height: 20px;
 }
 
+/* Bot messages: ovrride 600px width limitation ; highlight */
 ts-message.bot_message .message_body .attachment_group,
 ts-message[data-bot-id] .message_body .attachment_group {
   max-width: inherit;
@@ -53,6 +56,7 @@ ts-message[data-bot-id] .message_body .attachment_group {
   background-color: #f9f9f9;
 }
 
+/* Bot messages: ovrride image size limitation */
 ts-message[data-bot-id] .message_body .attachment_group .file_preview_preserve_aspect_ratio {
     width: 100% !important;
     height: 100% !important;
