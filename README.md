@@ -6,7 +6,12 @@ A custom CSS for Slack App users
 
 Slack is a wonderful and productive app. Its visual design is well conceived IOHO. However, we find some design decisions do not match our expectations, and some hinder our productivity. Thus, we chose to customize Slack by overriding its default style.
 
-This repository is created and maintained by individuals who work with Slack and whose work productivity is of high priority.
+This repository is created and maintained by individuals who work with Slack and whose work productivity is of high priority. Changes include:
+
+- Respecting `<pre>` and avoiding text wrap.
+- Remove width limitation on bot-generated content.
+- Remove size limitation on bot-generated images.
+- Others, ongoing.
 
 Unfortunately Slack does not support custom CSS and we must rely on a hack.
 
