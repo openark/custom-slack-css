@@ -1,0 +1,59 @@
+/*
+
+// Override Slack CSS
+
+// Tested with
+// - Slack 2.8.2 Direct Download
+// - Slack 2.8.2 App Store (Zero)
+
+// Instructions:
+// - Append the following javascript code to:
+//  - /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js (MacOS/X)
+//  - /usr/lib/slack/resources/app.asar.unpacked/src/static/ssb-interop.js (Debian/Ubuntu)
+
+//
+// The following JavaScript snippet was authored by Jonathan la Cour, https://github.com/lacour
+// and released to the public domain under CC0 (https://directory.fsf.org/wiki/License:CC0)
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+ $.ajax({
+   url: 'https://raw.githubusercontent.com/openark/custom-slack-css/master/custom.css',
+   success: function(css) {
+     $("<style></style>").appendTo('head').html(css);
+   }
+ });
+});
+
+*/
+
+.file_container.snippet_container.snippet_wrap .CodeMirror .CodeMirror-code > div pre,
+.file_container.snippet_container.snippet_wrap .sssh-code .sssh-line pre,
+.message .file_container.snippet_container .CodeMirror .CodeMirror-code > div pre,
+.message .file_container.snippet_container .sssh-code .sssh-line pre {
+  white-space: pre;
+}
+
+pre.special_formatting {
+  white-space: pre;
+  overflow-x: scroll;
+}
+
+/* Hubot messages */
+ts-message.bot_message .message_body .msg_inline_attachment_column {
+  font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+ts-message.bot_message .message_body .attachment_group,
+ts-message[data-bot-id] .message_body .attachment_group {
+  max-width: inherit;
+  color: #333333;
+  background-color: #f9f9f9;
+}
+
+ts-message[data-bot-id] .message_body .attachment_group .file_preview_preserve_aspect_ratio {
+    width: 100% !important;
+    height: 100% !important;
+}
