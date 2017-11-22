@@ -42,14 +42,13 @@ pre.special_formatting {
 }
 
 /* Bot messages: fixed font */
-ts-message.bot_message .message_body .msg_inline_attachment_column {
+ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
   line-height: 20px;
 }
 
 /* Bot messages: ovrride 600px width limitation ; highlight */
-ts-message.bot_message .message_body .attachment_group,
 ts-message[data-bot-id] .message_body .attachment_group {
   max-width: inherit;
   color: #333333;
