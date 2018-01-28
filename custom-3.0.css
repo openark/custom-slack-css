@@ -42,6 +42,7 @@ pre.special_formatting {
 }
 
 /* Bot messages: fixed font */
+span.c-message_attachment__text,
 ts-message.bot_message .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
