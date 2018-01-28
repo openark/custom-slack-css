@@ -50,6 +50,7 @@ ts-message.bot_message .message_body .msg_inline_attachment_column {
 
 /* Bot messages: ovrride 600px width limitation ; highlight */
 .c-message .c-message__attachments,
+.c-message .c-message__attachment,
 ts-message.bot_message .message_body .attachment_group,
 ts-message.bot_message .message_body .attachment_group,
 ts-message[data-bot-id] .message_body .attachment_group {
