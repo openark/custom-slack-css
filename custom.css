@@ -42,6 +42,8 @@ pre.special_formatting {
 }
 
 /* Bot messages: fixed font */
+/* .c-message is 3.0 notation */
+span.c-message_attachment__text,
 ts-message.bot_message .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
@@ -49,6 +51,10 @@ ts-message.bot_message .message_body .msg_inline_attachment_column {
 }
 
 /* Bot messages: ovrride 600px width limitation ; highlight */
+/* .c-message is 3.0 notation */
+.c-message .c-message__attachments,
+.c-message .c-message_attachment,
+ts-message.bot_message .message_body .attachment_group,
 ts-message.bot_message .message_body .attachment_group,
 ts-message[data-bot-id] .message_body .attachment_group {
   max-width: inherit;
