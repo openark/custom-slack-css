@@ -51,7 +51,7 @@ pre.special_formatting {
 /* .c-message is 3.0 notation */
 span.c-message_attachment__text,
 .c-snippet__code,
-ts-message.bot_message .message_body .msg_inline_attachment_column {
+ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
   line-height: 20px;
