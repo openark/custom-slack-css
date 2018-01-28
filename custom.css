@@ -36,12 +36,21 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Respect PRE: no wrap */
+.c-snippet--wrap .CodeMirror-code {
+  overflow-x: scroll;
+}
+.c-snippet--wrap .CodeMirror-code > div > pre {
+  white-space: pre;
+}
 pre.special_formatting {
   white-space: pre;
   overflow-x: scroll;
 }
 
 /* Bot messages: fixed font */
+/* .c-message is 3.0 notation */
+span.c-message_attachment__text,
+.c-snippet__code,
 ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
   font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
   font-size: 13px;
@@ -49,6 +58,16 @@ ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
 }
 
 /* Bot messages: ovrride 600px width limitation ; highlight */
+/* .c-message is 3.0 notation */
+.c-message .c-message__attachments,
+.c-message .c-message_attachment {
+  max-width: inherit;
+}
+.c-message .c-message_attachment__body {
+  color: #333333;
+  background-color: #f9f9f9;
+}
+/* 2.X */
 ts-message[data-bot-id] .message_body .attachment_group {
   max-width: inherit;
   color: #333333;
