@@ -36,7 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Respect PRE: no wrap */
-.c-snippet--wrap .CodeMirror-code > div > pre,
+.c-snippet--wrap .CodeMirror-code {
+  overflow-x: scroll;
+}
+.c-snippet--wrap .CodeMirror-code > div > pre {
+  white-space: pre;
+}
 pre.special_formatting {
   white-space: pre;
   overflow-x: scroll;
