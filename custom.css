@@ -68,8 +68,6 @@ ts-message[data-bot-id] .message_body .msg_inline_attachment_column {
   background-color: #f9f9f9;
 }
 /* 2.X */
-ts-message.bot_message .message_body .attachment_group,
-ts-message.bot_message .message_body .attachment_group,
 ts-message[data-bot-id] .message_body .attachment_group {
   max-width: inherit;
   color: #333333;
