@@ -42,17 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 If you cloned this repository locally, you may:
 
-```shell
-cat slack-hack.js >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
+```ShellSession
+$ make
 ```
-
-on Mac OS/X, or:
-
-```shell
-cat slack-hack.js >> /usr/lib/slack/resources/app.asar.unpacked/src/static/ssb-interop.js
-```
-
-on Debian/Ubuntu.
 
 ### What happens on Slack upgrade?
 
